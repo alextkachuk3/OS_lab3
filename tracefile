@@ -4,19 +4,19 @@ WRITE cc32 ... okay
 READ 4000 ... okay
 READ 4000 ... okay
 WRITE 6001 ... okay
-WRITE 91d9d ... page fault
-WRITE 42aff ... okay
-WRITE 42aff ... okay
-WRITE 7d282 ... okay
-WRITE a8caf ... page fault
-READ 5567c ... okay
-WRITE 5567c ... okay
-WRITE 5567c ... okay
-WRITE 5567c ... okay
-WRITE 5569b ... okay
-READ 5569b ... okay
-READ 5569b ... okay
-WRITE 5569b ... okay
-WRITE 5569b ... okay
-WRITE 5569b ... okay
-WRITE 5569b ... okay
+WRITE 5cc93 ... okay
+WRITE 711cd ... okay
+WRITE f87e2 ... page fault
+WRITE f87e2 ... okay
+WRITE f87e2 ... okay
+READ f87e2 ... okay
+WRITE f87e2 ... okay
+WRITE f87e2 ... okay
+WRITE e2dcc ... page fault
+WRITE e2dcc ... okay
+READ f3729 ... page fault
+READ f3729 ... okay
+WRITE 8c4e4 ... page fault
+WRITE 8c4e4 ... okay
+WRITE 8c4e4 ... okay
+WRITE 8c4e4 ... okay

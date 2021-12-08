@@ -16,8 +16,8 @@ public class Kernel extends Thread
   private String command_file;
   private String config_file;
   private ControlPanel controlPanel ;
-  private Vector memVector = new Vector();
-  private Vector instructVector = new Vector();
+  private final Vector memVector = new Vector();
+  private final Vector instructVector = new Vector();
   private String status;
   private boolean doStdoutLog = false;
   private boolean doFileLog = false;
@@ -36,7 +36,7 @@ public class Kernel extends Thread
     String command = "";
     byte R = 0;
     byte M = 0;
-    int i = 0;
+    int i;
     int j = 0;
     int id = 0;
     int physical = 0;
@@ -180,7 +180,7 @@ public class Kernel extends Thread
               tmp = st.nextToken();
               if ( tmp.startsWith( "power" ) )
               {
-                power = (double) Integer.parseInt(st.nextToken());
+                power = Integer.parseInt(st.nextToken());
                 block = (int) Math.pow(2,power);
               }
               else
@@ -489,7 +489,7 @@ public class Kernel extends Thread
       }
     }
     runs++;
-    controlPanel.timeValueLabel.setText( Integer.toString( runs*10 ) + " (ns)" );
+    controlPanel.timeValueLabel.setText(runs * 10 + " (ns)" );
   }
 
   public void reset() {

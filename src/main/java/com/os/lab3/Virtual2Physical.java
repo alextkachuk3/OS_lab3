@@ -4,9 +4,9 @@ public class Virtual2Physical
 {
   public static int pageNum ( long memaddr , int numpages , long block ) 
   {
-    int i = 0;
-    long high = 0;
-    long low = 0;
+    int i;
+    long high;
+    long low;
     
     for (i = 0; i <= numpages; i++) 
     {

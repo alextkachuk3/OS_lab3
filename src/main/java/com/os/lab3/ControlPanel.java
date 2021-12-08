@@ -1,6 +1,5 @@
 package com.os.lab3;
 
-import java.applet.*;
 import java.awt.*;
 
 public class ControlPanel extends Frame 
@@ -152,12 +151,7 @@ public class ControlPanel extends Frame
   Label l62 = new Label(null, Label.CENTER);
   Label l63 = new Label(null, Label.CENTER);
 
-  public ControlPanel() 
-  {
-    super();
-  }
-
-  public ControlPanel( String title ) 
+  public ControlPanel( String title )
   {
     super(title);
   }
@@ -170,7 +164,7 @@ public class ControlPanel extends Frame
     setBackground( Color.white );
     setForeground( Color.black );
     resize( 635 , 545 );
-    setFont( new Font( "Courier", 0, 12 ) );   
+    setFont( new Font( "Courier", 0, 12 ) );
 
     runButton.setForeground( Color.blue );
     runButton.setBackground( Color.lightGray );
@@ -192,7 +186,7 @@ public class ControlPanel extends Frame
     exitButton.reshape( 210,25,70,15 );
     add( exitButton );
 
-    b0.reshape(0, (0+2)*15+25, 70, 15);
+    b0.reshape(0, (2)*15+25, 70, 15);
     b0.setForeground( Color.magenta );
     b0.setBackground( Color.lightGray );
     add ( b0 );
@@ -352,7 +346,7 @@ public class ControlPanel extends Frame
     b31.setBackground( Color.lightGray );
     add ( b31 );
     
-    b32.reshape(140, (0+2)*15+25, 70, 15);
+    b32.reshape(140, (2)*15+25, 70, 15);
     b32.setForeground( Color.magenta );
     b32.setBackground( Color.lightGray );
     add ( b32 );
@@ -512,7 +506,7 @@ public class ControlPanel extends Frame
     b63.setBackground( Color.lightGray );
     add ( b63 );
 
-    statusValueLabel.reshape( 345,0+25,100,15 );
+    statusValueLabel.reshape( 345, 25,100,15 );
     add( statusValueLabel );
 
     timeValueLabel.reshape( 345,15+25,100,15 );
@@ -568,7 +562,7 @@ public class ControlPanel extends Frame
     add(physicalTwoLabel);
 
     Label statusLabel = new Label("status: " , Label.LEFT) ;
-    statusLabel.reshape(285,0+25,65,15);
+    statusLabel.reshape(285, 25,65,15);
     add(statusLabel);
 
     Label timeLabel = new Label("time: " , Label.LEFT) ;
@@ -1218,10 +1212,6 @@ public class ControlPanel extends Frame
     else if ( physicalPage == 63)
     {
       l63.setText( "page " + pageNum );
-    } 
-    else 
-    {
-      return;
     }
   }
 
